@@ -1,5 +1,6 @@
 import { Server } from "socket.io";
 const http = require("http");
+
 const Express = require("express");
 
 const app = Express();
@@ -13,7 +14,9 @@ export const io = new Server(server, {
 });
 
 export const getReceiverSocketId = (receiverId: string): string => {
+  //part 1
   return userSocketMap[receiverId];
+  
 };
 
 const userSocketMap = {}; // {userId: socketId}
@@ -31,6 +34,7 @@ io.on("connection", (socket) => {
   io.emit("getOnlineUsers", Object.keys(userSocketMap));
 
   //socket.on is used to listen for events both on client and server side
+  //used before in last app
   socket.on("disconnect", () => {
     console.log("user disconnected", socket.id);
 
