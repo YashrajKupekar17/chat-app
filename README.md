@@ -1,4 +1,4 @@
-## Chat Application - ReadMe
+# Chat Application - ReadMe
 
 ### Project Overview
 
@@ -23,6 +23,7 @@ The application allows users to create accounts, log in, and engage in real-time
 
 To run the chat application locally, follow these steps:
 
+
 1. **Clone the repository**:
    ```
    git clone https://github.com/your-username/chat-app.git
@@ -31,6 +32,7 @@ To run the chat application locally, follow these steps:
 2. **Install dependencies**:
    - Navigate to the root directory and run `npm install`.
    - Navigate to the chat directory and run `npm install`.
+
 
 3. **Set up the environment**:
    - Create a `.env` file in the server directory and add the following environment variables:
@@ -69,5 +71,6 @@ If you would like to contribute to the project, please follow these steps:
 5. Submit a pull request, and the project maintainers will review your changes.
 
 ### License
+
 
 This project is licensed under the [MIT License](LICENSE).
